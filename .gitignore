@@ -7,5 +7,6 @@
 /.psc*
 /.purs*
 /.psa*
+/build/
 *swo
 *swp
