@@ -18,13 +18,13 @@ fillRectangle ctx color r = do
 
 clearCanvas :: Context2D -> CanvasSettings -> Effect Unit
 clearCanvas ctx settings = let 
-    r = { x: 0.0
+    canvasRect = { x: 0.0
         , y: 0.0
         , width: canvasSettings.width
         , height: canvasSettings.height
         }
     in do 
-    fillRectangle ctx canvasSettings.color r
+    fillRectangle ctx canvasSettings.color canvasRect
 
 
 main :: Effect Unit
