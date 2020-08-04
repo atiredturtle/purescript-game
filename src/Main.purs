@@ -36,3 +36,10 @@ main = void $ unsafePartial do
     setCanvasHeight canvas canvasSettings.height
     ctx <- getContext2D canvas
     clearCanvas ctx canvasSettings
+
+    -- draw a single rectangle
+    fillRectangle ctx "red" { x: 50.0
+        , y: 50.0
+        , width: 50.0
+        , height: 50.0
+    }
